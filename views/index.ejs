@@ -78,10 +78,10 @@
                             <div className='speedo-inner-circle'></div>
                             <div className='speedo-inner-circle-cover'>{number}kmh</div>
 
-                            <h3 className='start'> 0</h3>  
+                            <h3 className='start'> 0</h3>
                             <h3 className='mid'>110</h3>
                             <h3 className='end'>220</h3>
-        
+
                         </div>
                     </div>   -->
                     <!-- <img src="assets/media/logo_youtube.png" alt=""> -->
@@ -113,18 +113,17 @@
 
     <script>
 
-		const host = `http://${window.location.host}/`;
+		const host = `https://${window.location.host}:<% PORT %>/`;
         console.log(host)
-        
-        var userImageLink = 
+
+        var userImageLink =
 "https://media.geeksforgeeks.org/wp-content/cdn-uploads/20200714180638/CIP_Launch-banner.png";
             var time_start, end_time;
-            
+
             // The size in bytes
             var downloadSize = 5616998;
             var downloadImgSrc = new Image();
-  
-            
+
             setInterval(()=>{
                 end_time = new Date().getTime();
                 displaySpeed()
@@ -133,11 +132,11 @@
             downloadImgSrc.src = userImageLink;
             document.write("time start: " + time_start);
             document.write("<br>");
-            
+
             function displaySpeed() {
                 var timeDuration = (end_time - time_start) / 1000;
                 var loadedBits = downloadSize * 8;
-                
+
                 /* Converts a number into string
                    using toFixed(2) rounding to 2 */
                 var bps = (loadedBits / timeDuration).toFixed(2);
@@ -153,23 +152,21 @@
                 // h3.classList.add('heading5')
                 h4.classList.add('heading4')
                 h2.classList.add('heading4')
-                h5.innerText = "Your internet connection speed is: \n" 
-                    //   + bps + " bps\n" + speedInKbps 
+                h5.innerText = "Your internet connection speed is: \n"
+                    //   + bps + " bps\n" + speedInKbps
                     //   + " kbps\n" + speedInMbps + " Mbps\n"
                 // h3.innerText = `${bps}bps`
                 h4.innerText = `${speedInKbps}Kbps`
-                h2.innerText = `${speedInMbps}Mbps`      
+                h2.innerText = `${speedInMbps}Mbps`
                 internetSpeed.innerHTML = `<lottie-player src="https://assets10.lottiefiles.com/packages/lf20_DtW8ik.json" class="speedmeter" background="transparent"  speed="1"  style="width: 300px; height: 150px; margin-bottom: -4rem;"  loop autoplay></lottie-player>`
-                internetSpeed.append(h5,h4,h2)     
-                
+                internetSpeed.append(h5,h4,h2)
+
             }
-                
-            console.log("anjfbd")
-            
+
 		document.querySelector("#get-video-info-btn").addEventListener("click",function(){
             console.log(host, "firing")
 			let videoURL = document.querySelector("#videoURL").value.trim();
-            
+
 			if(videoURL.length == 0){
 				alert("Please enter youtube video link");
 				return;
@@ -188,19 +185,19 @@
 
 				let html = "";
                 // let videoUrl = document.querySelector("#videoURL")
-                
-               
+
+
 
 				for(let i=0;i<data.formats.length;i++){
                     console.log(data.formats);
-                    
+
 
 					if(data.formats[i].container != "mp4"){
-                        
+
 						continue;
 					}
 
-					
+
 					if(data.formats[i].audioCodec == null){
 						continue;
 					}
@@ -211,7 +208,7 @@
 						</option>
 					`;
                     }
-					
+
 					detailsNodes.thumbnail.src = data.videoDetails.thumbnails[data.videoDetails.thumbnails.length - 1].url; // get HD thumbnail img
 					detailsNodes.title.innerText = data.videoDetails.title;
 					// detailsNodes.description.innerText = data.videoDetails.description;
@@ -232,9 +229,9 @@
 
             videoURL.innerText = "";
 
-            
+
 		});
-        
+
 
 		document.querySelector("#download-btn").addEventListener("click",function(){
 			let videoURL = document.querySelector("#video-url").value;
@@ -250,7 +247,7 @@
 
             video_data.style.display = "none"
             console.log('cross')
-            
+
 
         })
 
