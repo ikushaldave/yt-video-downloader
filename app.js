@@ -28,9 +28,10 @@ app.get("/contact", function(req, res, next) {
   res.render("contact")
 })
 
-app.get("/videoInfo",async function(request,response){
+app.get("/videoInfo", async function (request, response) {
+	console.log("video");
 	const videoURL = request.query.videoURL;
-  console.log(videoURL)
+	console.log(videoURL);
 	const info = await ytdl.getInfo(videoURL);
 	response.status(200).json(info);
 });
