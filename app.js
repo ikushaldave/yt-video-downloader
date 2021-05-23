@@ -20,11 +20,6 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.get('/', function(req, res, next) {
-  console.log(process.env.PORT)
-  res.render('index', { PORT: process.env.PORT });
-});
-
 app.get("/about", function(req, res, next) {
   res.render("about")
 })
@@ -48,6 +43,12 @@ app.get("/download",function(request,response){
 	ytdl(videoURL,{
 		filter: format => format.itag == itag
 	}).pipe(response);
+});
+
+
+app.get("/", function (req, res, next) {
+	console.log(process.env.PORT);
+	res.render("index", { PORT: process.env.PORT });
 });
 
 // catch 404 and forward to error handler
