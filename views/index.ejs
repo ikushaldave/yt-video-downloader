@@ -1,0 +1,260 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Downloader</title>
+	<link rel="stylesheet" href="/stylesheets/style.css">
+    <link rel="stylesheet" href="/stylesheets/home.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=KoHo:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/17bbe460ec.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</head>
+<body>
+    <div class="small_bubble"></div>
+    <div class="bubbles"></div>
+    <div class="mini_bubble"></div>
+
+
+    <!-- <div class="single_bubble"></div>
+    <div class="semi_single_bubble"></div> -->
+    <main>
+       <div class="main_container">
+           <img src="/images/logo.png" class="brand_logo" alt="">
+            <div class="container">
+                <a class="item item1 flex justify_center align_center" href="/service">
+                    <!-- <lottie-player src="https://assets9.lottiefiles.com/packages/lf20_3qnu2ywg.json"  background="transparent"  speed="1"  style="width: 300px; height: 250px;"  loop  autoplay></lottie-player> -->
+                    <!-- <h2>How To Download</h2> -->
+                    <!-- <lottie-player src="https://assets6.lottiefiles.com/packages/lf20_h38aiync.json"  background="transparent"  speed="1"  style="width: 300px; height: 180px;"  loop  autoplay></lottie-player> -->
+                    <!-- <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_tNwU15.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop  autoplay></lottie-player> -->
+                    <lottie-player src="https://assets10.lottiefiles.com/private_files/lf30_C4mvTM.json"  background="transparent"  speed="1"  style="width: 300px; height: 200px;"  loop  autoplay></lottie-player>
+
+                </a>
+                <div class="item item2"></div>
+
+                <a class="item item3 flex justify_center align_center" href="/testimonial">
+                    <img src="/images/youtube_logo-removebg-preview.png" alt="">
+                </a>
+                <a class="item item4" href="#">
+                    <div class="form">
+                        <div class="form-element ">
+                            <label for="videoURL">Enter Youtube Video Link</label>
+                            <input type="text" id="videoURL" placeholder="Paste Your Link Here">
+                        </div>
+                        <div class="form-element">
+                            <button id="get-video-info-btn">Download <lottie-player class="lottie" src="https://assets7.lottiefiles.com/packages/lf20_zv0goikc.json"  background="transparent"  speed="1"  style="width: 50px; height: 50px; margin: auto;"  loop  autoplay></lottie-player></button>
+                        </div>
+                    </div>
+                    <div class="video-data">
+                        <i class="fas fa-times" id="cross"></i>
+                        <div class="data">
+                            <div class="thumbnail">
+                                <img>
+                            </div>
+                            <div class="info">
+                                <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</h2>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                </p>
+                            </div>
+                        </div>
+                        <div class="controls">
+                            <input type="hidden" id="video-url">
+                            <select id="download-options"></select>
+                            <button id="download-btn">Download</button>
+                        </div>
+                    </div>
+                </a>
+                <!-- <div class="item item5"></div> -->
+                <a class="item item5 flex justify_center align_center" href="/portfolio">
+                    <!-- <div className="speedo">
+                        <div className="speedo-body">
+                            <div className="speedo-fill" ></div>
+                            <div className="speedo-cover"></div>
+                            <div className='speedo-inner-circle'></div>
+                            <div className='speedo-inner-circle-cover'>{number}kmh</div>
+
+                            <h3 className='start'> 0</h3>  
+                            <h3 className='mid'>110</h3>
+                            <h3 className='end'>220</h3>
+        
+                        </div>
+                    </div>   -->
+                    <!-- <img src="assets/media/logo_youtube.png" alt=""> -->
+                    <!-- <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_tNwU15.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop  autoplay></lottie-player> -->
+                    <!-- <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_DtW8ik.json" class="speedmeter" background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop autoplay></lottie-player> -->
+                </a>
+                <a class="item item7 flex align_center justify_center " href="/contact">
+                     <lottie-player src="https://assets8.lottiefiles.com/private_files/lf30_lttvuxbp.json"  background="transparent"  speed="1"  style="width: 300px; height: 200px;"  loop  autoplay></lottie-player>
+                </a>
+                <a class="item item6 flex justify_center align_center" href="/about">
+                    <div class="one_more">
+                    <h2>About Us</h2>
+                    <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_ihsy8p2a.json"  background="transparent"  speed="1"  style="width: 300px; height: 180px;"  loop  autoplay></lottie-player>
+                    </div>
+                </a>
+                <!-- <a class="item item7 flex justify_center align_center" href="">
+                    <lottie-player src="https://assets8.lottiefiles.com/private_files/lf30_lttvuxbp.json"  background="transparent"  speed="1"  style="width: 300px; height: 200px;"  loop  autoplay></lottie-player>
+                </a> -->
+            </div>
+            <small>Copyright &copy;2021 Company Download Me</small>
+       </div>
+    </main>
+
+    <!-- <div class=" footer_small_bubble"></div>
+    <div class=" footer_bubble"></div>
+    <div class=" footer_mini_bubble"></div> -->
+
+    <div class=" footer_bubble"></div>
+
+    <script>
+
+		const host = `http://${window.location.host}/`;
+        console.log(host)
+        
+        var userImageLink = 
+"https://media.geeksforgeeks.org/wp-content/cdn-uploads/20200714180638/CIP_Launch-banner.png";
+            var time_start, end_time;
+            
+            // The size in bytes
+            var downloadSize = 5616998;
+            var downloadImgSrc = new Image();
+  
+            
+            setInterval(()=>{
+                end_time = new Date().getTime();
+                displaySpeed()
+            },850)
+            time_start = new Date().getTime();
+            downloadImgSrc.src = userImageLink;
+            document.write("time start: " + time_start);
+            document.write("<br>");
+            
+            function displaySpeed() {
+                var timeDuration = (end_time - time_start) / 1000;
+                var loadedBits = downloadSize * 8;
+                
+                /* Converts a number into string
+                   using toFixed(2) rounding to 2 */
+                var bps = (loadedBits / timeDuration).toFixed(2);
+                var speedInKbps = (bps / 1024).toFixed(2);
+                var speedInMbps = (speedInKbps / 1024).toFixed(2);
+                let internetSpeed = document.querySelector('.item5')
+                internetSpeed.innerHTML = ''
+                let h5 = document.createElement('h5')
+                let h3 = document.createElement('h5')
+                let h4 = document.createElement('h5')
+                let h2 = document.createElement('h5')
+                h5.classList.add('heading5')
+                // h3.classList.add('heading5')
+                h4.classList.add('heading4')
+                h2.classList.add('heading4')
+                h5.innerText = "Your internet connection speed is: \n" 
+                    //   + bps + " bps\n" + speedInKbps 
+                    //   + " kbps\n" + speedInMbps + " Mbps\n"
+                // h3.innerText = `${bps}bps`
+                h4.innerText = `${speedInKbps}Kbps`
+                h2.innerText = `${speedInMbps}Mbps`      
+                internetSpeed.innerHTML = `<lottie-player src="https://assets10.lottiefiles.com/packages/lf20_DtW8ik.json" class="speedmeter" background="transparent"  speed="1"  style="width: 300px; height: 150px; margin-bottom: -4rem;"  loop autoplay></lottie-player>`
+                internetSpeed.append(h5,h4,h2)     
+                
+            }
+                
+            console.log("anjfbd")
+            
+		document.querySelector("#get-video-info-btn").addEventListener("click",function(){
+            console.log(host, "firing")
+			let videoURL = document.querySelector("#videoURL").value.trim();
+            
+			if(videoURL.length == 0){
+				alert("Please enter youtube video link");
+				return;
+			}
+			fetch(host+"videoInfo?videoURL="+videoURL).then(function(response){
+				return response.json();
+			}).then(function(data){
+				console.log(data);
+				let detailsNodes = {
+					thumbnail:document.querySelector(".video-data .thumbnail img"),
+					title:document.querySelector(".video-data .info h2"),
+					description:document.querySelector(".video-data .info p"),
+					videoURL:document.querySelector(".video-data .controls #video-url"),
+					downloadOptions:document.querySelector(".video-data .controls #download-options")
+				}
+
+				let html = "";
+                // let videoUrl = document.querySelector("#videoURL")
+                
+               
+
+				for(let i=0;i<data.formats.length;i++){
+                    console.log(data.formats);
+                    
+
+					if(data.formats[i].container != "mp4"){
+                        
+						continue;
+					}
+
+					
+					if(data.formats[i].audioCodec == null){
+						continue;
+					}
+                    if(data.formats[i].mimeType.includes('mp4') && data.formats[i].qualityLabel!==null ){
+                        html += `
+						<option value="${data.formats[i].itag}">
+							${data.formats[i].container} - ${data.formats[i].qualityLabel}
+						</option>
+					`;
+                    }
+					
+					detailsNodes.thumbnail.src = data.videoDetails.thumbnails[data.videoDetails.thumbnails.length - 1].url; // get HD thumbnail img
+					detailsNodes.title.innerText = data.videoDetails.title;
+					// detailsNodes.description.innerText = data.videoDetails.description;
+
+					detailsNodes.videoURL.value = videoURL;
+					detailsNodes.downloadOptions.innerHTML = html;
+
+					document.querySelector(".video-data").style.display = "block";
+					document.querySelector(".video-data").scrollIntoView({
+						behavior:"smooth"
+					});
+
+				}
+			}).catch(function(error){
+                console.log(error)
+				alert("Something went wrong");
+			})
+
+            videoURL.innerText = "";
+
+            
+		});
+        
+
+		document.querySelector("#download-btn").addEventListener("click",function(){
+			let videoURL = document.querySelector("#video-url").value;
+			let itag = document.querySelector("#download-options").value;
+			window.open(host + "download?videoURL="+videoURL+"&itag="+itag);
+		});
+
+
+
+
+        let video_data = document.querySelector(".video-data")
+        document.getElementById('cross').addEventListener('click', () => {
+
+            video_data.style.display = "none"
+            console.log('cross')
+            
+
+        })
+
+
+    </script>
+</body>
+</html>
